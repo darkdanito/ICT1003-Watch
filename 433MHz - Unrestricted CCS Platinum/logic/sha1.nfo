@@ -1,0 +1,85 @@
+MSP430 C/C++ Optimizer                  v4.4.1
+Build Number 1OLQA-KDADEMDK-RTARQ-WAR-ZACIF_U_U_R
+
+		======File-level Analysis Summary======
+
+
+extern void sha1_final() is called from 0 sites in this file.
+    It appears to be inlineable (size = 95 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	sha1_transform_and_copy() (1 times)
+	sha1_transform() (1 times)
+	memset() (3 times)
+
+extern void sha1_init() is called from 0 sites in this file.
+    It appears to be inlineable (size = 30 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void sha1_transform() is called from 4 sites in this file.
+    It appears to be inlineable (size = 421 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void sha1_transform_and_copy() is called from 1 sites in this file.
+    It appears to be inlineable (size = 61 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	sha1_transform() (1 times)
+
+extern void sha1_update() is called from 0 sites in this file.
+    It appears to be inlineable (size = 101 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	sha1_transform() (2 times)
+	memcpy() (3 times)
+
+
+Making this function inlineable: sha1_transform_and_copy()
+Inlineable function will be suppressed: sha1_transform_and_copy()
+
+These external functions are called but not defined here:
+	memcpy()
+	memset()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+static void sha1_transform() is called from 4 sites in this file.
+    It appears to be inlineable (size = 421 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void sha1_update() is called from 0 sites in this file.
+    It appears to be inlineable (size = 101 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	sha1_transform() (2 times)
+
+==============================================================================
+
+extern void sha1_init() is called from 0 sites in this file.
+    It appears to be inlineable (size = 30 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void sha1_final() is called from 0 sites in this file.
+    It appears to be inlineable (size = 95 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	sha1_transform() (1 times)
+	sha1_transform_and_copy() (1 times)
+
+== END OF INFO OUTPUT==
