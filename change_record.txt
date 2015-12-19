@@ -1,11 +1,4 @@
-Credits to: amd989 for his code in Github.
-
-Refer to: https://github.com/amd989/ezTOTP
-
-Modification done to get the OTP working for GMT+8 timezone.
-
-
-=================================================================================================================================================
+===============================================================================================================================
 
 V1.8 (11.10.2013)
 Changes
@@ -38,7 +31,7 @@ V1.5 (16.03.2010)
 Fixed following bugs
 - main.c/init_application()							Changed XT1 drive level to highest to avoid ACLK noise when turning on backlight.
 - main.c/wakeup_event(), timer.c/TIMER0_A0_ISR()	Modified key lock procedure.
-- vti_ps.c/ps_get_temp()							Negative °C are now converted correctly to Kelvin
+- vti_ps.c/ps_get_temp()							Negative Â°C are now converted correctly to Kelvin
 
 Other changes
 - main.c/read_calibration_values()					Added range check for rf_frequoffset variable
